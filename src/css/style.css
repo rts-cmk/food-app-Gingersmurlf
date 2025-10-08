@@ -1,5 +1,6 @@
 @import url(header.css);
 @import url(main.css);
+@import url(footer.css);
 
 * {
     box-sizing: border-box;
@@ -9,4 +10,14 @@
 
 body {
     font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+    min-height: 100vh;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
