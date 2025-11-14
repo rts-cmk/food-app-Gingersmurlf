@@ -1,0 +1,47 @@
+.footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  & .footer-plus {
+    position: absolute;
+    display: flex;
+    border: red;
+    border-radius: 50%;
+    width: 100%;
+    bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+    
+  
+  }
+
+  & .footer-icons {
+    display: flex;
+    position: absolute;
+    gap: 3rem;
+    width: 100%;
+    padding: 1rem 2rem;
+    bottom: .5rem;
+    overflow: hidden;
+    &.icons-left {
+      left: 0;
+    }
+
+    &.icons-right {
+      justify-content: flex-end;
+      right: 0;
+    }
+
+    & .footer-icon.active::after {
+      bottom: 1.5rem;
+      transform: translateX(-1.1rem);
+      font-size: xx-large;
+      content: "•";
+      position: absolute;
+      color: white;
+
+      width: 1rem;
+      height: 1px;
+    }
+  }
+}
